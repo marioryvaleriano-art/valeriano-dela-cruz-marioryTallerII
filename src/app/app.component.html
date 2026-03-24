@@ -1,0 +1,29 @@
+<div class="container">
+
+  <h1>🌸 Usuarios desde API 🌸</h1>
+
+  <h2>✨ Lista de usuarios ✨</h2>
+
+  <table>
+    <thead>
+      <tr>
+        <th>👤 Nombre</th>
+        <th>📧 Email</th>
+        <th>🏙️ Ciudad</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr *ngFor="let user of users">
+        <td>{{ user.name }}</td>
+        <td>{{ user.email }}</td>
+        <td>{{ user.address?.city }}</td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
+
+<footer>
+   Hecho en Angular
+</footer>
